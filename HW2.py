@@ -1,3 +1,5 @@
+import random
+
 # YOUR NAME
 
 '''
@@ -19,10 +21,24 @@ hypotenuse.
 
 '''
 Problem 3
-Write a function that takes the Euclidean distance between two points. Its parameters should be x1, y1, x2, and y2. 
-You should look up the distance formula if you forgot or don't know what it is. 
+Write a function called distance that returns the Euclidean distance between two points. Its parameters should be 
+x1, y1, x2, and y2. You should look up the distance formula if you forgot or don't know what it is. To test if your 
+function works, I wrote a function that uses the distance formula to approximate pi. If your function is correct,
+then you should get at least 3.141 plus or minus 0.001. 
 '''
-
+# def monteCarlo(numPoints):
+#     insideCount = 0
+#     for x in range(numPoints):
+#         x = random.uniform(0, 1)
+#         y = random.uniform(0, 1)
+#         if distance(x, y, 0, 0) <= 1:
+#             insideCount += 1
+#     return 4 * insideCount / numPoints
+#
+# sum = 0
+# for x in range(10):
+#     sum += monteCarlo(100000)
+# print(sum / 10)
 
 '''
 Problem 4
