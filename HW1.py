@@ -1,9 +1,8 @@
 # YOUR NAME
 
-print("My name is <NAME>")  # replace <NAME> with your name
+print("My name is Jeenuh")  # replace <NAME> with your name
 
 # Create a variable called "num" and assign it to an int 55. Add 1 to it and print its new value.
-
 
 squareRoot = '1 ** 0.5'  # If you were to print this variable, what would the output be? Comment your answer below.
 squareRoot = 1 ** 0.5  # What about the value of this?
