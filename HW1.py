@@ -9,7 +9,7 @@ print(num + 1)
 
 squareRoot = '1 ** 0.5'  # If you were to print this variable, what would the output be? Comment your answer below.
 
-# 1 ** 0.5
+# 1 ** 0.5 wat
 
 squareRoot = 1 ** 0.5  # What about the value of this?
 
