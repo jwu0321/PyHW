@@ -5,12 +5,13 @@ import random
 '''
 Problem 1
 Implement the rest of calculateTax to compute the price of an item after tax is applied to it. New York's tax rate
-is 8.875%.
+is 8.875%. You also need to round your final answer to two decimal places, and that can be done using the round() 
+function. It is used as round(num, digits), where num is the number to round and digits is the number of decimal
+places to round to. For instance, round(1.2348, 3) returns 1.235.
 '''
 
 def calculateTax(price):
-    return price * 1.08875
-
+    return None
 
 '''
 Problem 2
@@ -26,6 +27,10 @@ x1, y1, x2, and y2. You should look up the distance formula if you forgot or don
 function works, I wrote a function that uses the distance formula to approximate pi. If your function is correct,
 then you should get at least 3.141 plus or minus 0.001. 
 '''
+
+def distance():
+    return None
+
 # def monteCarlo(numPoints):
 #     insideCount = 0
 #     for x in range(numPoints):
@@ -46,3 +51,6 @@ Write a function that determines whether a year is a leap year. There are two ru
 4, unless it is a multiple of 100, where only years divisible by 400 are leap years. So, 2000 is a leap year, but 
 1900 is not.
 '''
+
+def isLeapYear():
+    return None
