@@ -1,10 +1,10 @@
 import random
 
-# YOUR NAME
+# YOUR NAME HERE
 
 '''
 Problem 1
-Implement the rest of calculateTax to compute the price of an item after tax is applied to it. New York's tax rate
+Implement calculate_tax to compute the price of an item after tax is applied to it. New York's tax rate
 is 8.875%. You also need to round your final answer to two decimal places, and that can be done using the round() 
 function. It is used as round(num, digits), where num is the number to round and digits is the number of decimal
 places to round to. For instance, round(1.2348, 3) returns 1.235.
@@ -17,10 +17,13 @@ def calculate_tax(price):
 
 '''
 Problem 2
-Write a function named computeHypotenuse that takes in two ints a, b in a right triangle and computes the length of the
+Write a function named compute_hypotenuse that takes in two ints a, b in a right triangle and computes the length of the
 hypotenuse.
 '''
 
+
+def compute_hypotenuse(a, b):
+    return None
 
 '''
 Problem 3
@@ -31,7 +34,7 @@ function is correct, then you should get at least 3.141 plus or minus 0.001.
 '''
 
 
-def distance():
+def distance(x1, y1, x2, y2):
     return None
 
 
@@ -57,5 +60,5 @@ but 1900 is not.
 '''
 
 
-def is_leap_year():
+def is_leap_year(year):
     return None
