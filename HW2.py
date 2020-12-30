@@ -10,8 +10,10 @@ function. It is used as round(num, digits), where num is the number to round and
 places to round to. For instance, round(1.2348, 3) returns 1.235.
 '''
 
+
 def calculateTax(price):
     return None
+
 
 '''
 Problem 2
@@ -24,16 +26,18 @@ hypotenuse.
 Problem 3
 Write a function called distance that returns the Euclidean distance between two points. Its parameters should be 
 x1, y1, x2, and y2. You should look up the distance formula if you forgot or don't know what it is. To test if your 
-function works, I wrote a function that uses the distance formula to approximate pi. If your function is correct,
-then you should get at least 3.141 plus or minus 0.001. 
+function works, I wrote a function that uses the distance formula to approximate pi. Uncomment my code, and if your 
+function is correct, then you should get at least 3.141 plus or minus 0.001. 
 '''
+
 
 def distance():
     return None
 
+
 # def monteCarlo(numPoints):
 #     insideCount = 0
-#     for x in range(numPoints):
+#     for point in range(numPoints):
 #         x = random.uniform(0, 1)
 #         y = random.uniform(0, 1)
 #         if distance(x, y, 0, 0) <= 1:
@@ -48,9 +52,10 @@ def distance():
 '''
 Problem 4
 Write a function that determines whether a year is a leap year. There are two rules: the year has to be divisible by
-4, unless it is a multiple of 100, where only years divisible by 400 are leap years. So, 2000 is a leap year, but 
-1900 is not.
+4, unless it is a multiple of 100, where only years divisible by 400 are leap years. So, 2000 and 1992 are leap years, 
+but 1900 is not.
 '''
+
 
 def isLeapYear():
     return None
