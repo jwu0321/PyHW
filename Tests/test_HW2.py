@@ -1,5 +1,5 @@
 import pytest
 from ..HW2 import *
 
-def testCalculateTax():
-    assert calculateTax()
+def test_calculate_tax():
+    assert calculate_tax()

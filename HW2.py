@@ -11,7 +11,7 @@ places to round to. For instance, round(1.2348, 3) returns 1.235.
 '''
 
 
-def calculateTax(price):
+def calculate_tax(price):
     return None
 
 
@@ -57,5 +57,5 @@ but 1900 is not.
 '''
 
 
-def isLeapYear():
+def is_leap_year():
     return None
