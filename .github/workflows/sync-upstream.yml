@@ -9,5 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Merge w/ Upstream
-        run: |
-          ./Scripts/sync-upstream.sh
+        run: bash ./Scripts/sync-upstream.sh
