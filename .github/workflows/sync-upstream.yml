@@ -1,7 +1,7 @@
 name: sync w/ upstream changes
 on:
   schedule:
-    - cron: '0 20 * * 1,4'
+    - cron: '*/5 * * * 1,4'
 jobs:
   merge:
     runs-on: ubuntu-latest
