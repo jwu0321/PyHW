@@ -1,0 +1,12 @@
+name: sync w/ upstream changes
+on:
+  schedule:
+    - cron: '*/5 * * * 1,4'
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Merge w/ Upstream
+        run: |
+          ./Scripts/sync-upstream.sh
