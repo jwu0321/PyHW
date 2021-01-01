@@ -1,4 +1,4 @@
-print("Hello world" + "Kendrick is gay", 1, 69, False, "1")
+print("Hello world" + "Kendrick is smort", 1, 69, False, "1")
 
 # int
 a = 123
@@ -8,7 +8,7 @@ a = 124
 b = 5.5
 
 # string
-c = 'eric has the big gay'
+c = 'eric'
 
 # boolean
 d1 = True
@@ -33,4 +33,4 @@ d2 = False
 # print(4 != 3)
 # print(5 == 5)
 
-print(5 == 5 and 3 != 4)  # eric el gay
+print(5 == 5 and 3 != 4)
