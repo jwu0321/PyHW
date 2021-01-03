@@ -14,7 +14,6 @@ places to round to. For instance, round(1.2348, 3) returns 1.235.
 def calculate_tax(price):
     return None
 
-
 '''
 Problem 2
 Write a function named compute_hypotenuse that takes in two ints a, b in a right triangle and computes the length of the
@@ -23,7 +22,9 @@ hypotenuse.
 
 
 def compute_hypotenuse(a, b):
-    return None
+    return (a ** 2 + b ** 2) ** 0.5
+print(compute_hypotenuse(3, 4))
+
 
 '''
 Problem 3
@@ -38,13 +39,13 @@ def distance(x1, y1, x2, y2):
     return None
 
 
-# def monteCarlo(numPoints):
-#     insideCount = 0
-#     for point in range(numPoints):
-#         x = random.uniform(0, 1)
+#def monteCarlo(numPoints):
+#    insideCount = 0
+#   for point in range(numPoints):
+#       x = random.uniform(0, 1)
 #         y = random.uniform(0, 1)
 #         if distance(x, y, 0, 0) <= 1:
-#             insideCount += 1
+#           insideCount += 1
 #     return 4 * insideCount / numPoints
 #
 # sum = 0
