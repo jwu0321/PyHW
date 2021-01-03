@@ -12,18 +12,19 @@ def list_range(arr):
 
 """
 Problem 2
-Switch the first two elements of a list and return the new list. Assume that every list will have at least two 
-elements.
+Switch the elements of a list at index a and b and return the new list. Assume that every list will have at least two 
+elements. 
 """
 
 
-def switch(arr):
+def switch(arr, a, b):
     return None
 
 
 """
 Problem 3
-Return the Chinese zodiac as a string corresponding to the year given as an int.
+Return the Chinese zodiac as a string corresponding to the year given as an int. For testing purposes, use 
+rat, ox, tiger, rabbit, dragon, snake, horse, sheep, monkey, rooster, dog, pig. 
 """
 
 
