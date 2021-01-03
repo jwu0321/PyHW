@@ -34,8 +34,8 @@ def zodiac(year):
 
 """
 Problem 4
-In one line of code, return every 7th number starting from the last element going backwards. You should only need 
-to modify the return statement to do this. The result should be 777, 770, ... all the way to 0. 
+In one line of code, return every 7th number starting from the last element going backwards using indices and slicing. 
+You should only need to modify the return statement to do this. The result should be 777, 770, ... all the way to 0. 
 """
 
 
