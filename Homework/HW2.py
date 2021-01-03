@@ -14,6 +14,7 @@ places to round to. For instance, round(1.2348, 3) returns 1.235.
 def calculate_tax(price):
     return round(price * 1.08875, 2)
 
+
 '''
 Problem 2
 Write a function named compute_hypotenuse that takes in two ints a, b in a right triangle and computes the length of the
@@ -36,7 +37,6 @@ function is correct, then you should get at least 3.141 plus or minus 0.001.
 
 def distance(x1, y1, x2, y2):
     return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
-
 
 # def monteCarlo(numPoints):
 #     insideCount = 0
@@ -62,4 +62,4 @@ but 1900 is not.
 
 
 def is_leap_year(year):
-    return (year % 4 == 0 and year % 100 != 0) or year % 400 == 0
+    return year % 4 == 0 and year % 100 != 0 or year % 400 == 0
