@@ -38,19 +38,19 @@ function is correct, then you should get at least 3.141 plus or minus 0.001.
 def distance(x1, y1, x2, y2):
     return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
 
-# def monteCarlo(numPoints):
-#     insideCount = 0
-#     for point in range(numPoints):
-#         x = random.uniform(0, 1)
-#         y = random.uniform(0, 1)
-#         if distance(x, y, 0, 0) <= 1:
-#             insideCount += 1
-#     return 4 * insideCount / numPoints
-#
-# sum = 0
-# for x in range(10):
-#     sum += monteCarlo(100000)
-# print(sum / 10)
+def monteCarlo(numPoints):
+    insideCount = 0
+    for point in range(numPoints):
+        x = random.uniform(0, 1)
+        y = random.uniform(0, 1)
+        if distance(x, y, 0, 0) <= 1:
+            insideCount += 1
+    return 4 * insideCount / numPoints
+
+sum = 0
+for x in range(10):
+    sum += monteCarlo(100000)
+print(sum / 10)
 
 
 '''
@@ -62,4 +62,4 @@ but 1900 is not.
 
 
 def is_leap_year(year):
-    return year % 4 == 0 and year % 100 != 0 or year % 400 == 0
+    return (year % 4 == 0 and year % 100 != 0) or year % 400 == 0
