@@ -28,9 +28,8 @@ rat, ox, tiger, rabbit, dragon, snake, horse, sheep, monkey, rooster, dog, pig.
 
 
 def zodiac(year):
-    arr = [rat, ox, tiger, rabbit, dragon, snake, horse, sheep, monkey, rooster, dog, pig]
-    return None
-
+    Chinese_zodiac = ["monkey", "rooster", "dog", "pig", "rat", "ox", "tiger", "rabbit", "dragon", "snake", "horse", "sheep"]
+    return Chinese_zodiac[year % 12]
 
 """
 Problem 4
