@@ -1,4 +1,4 @@
-# YOUR NAME HERE
+# Jeenuh
 
 """
 Problem 1
@@ -7,28 +7,28 @@ Return the range of a list of ints. Assume that it is sorted.
 
 
 def list_range(arr):
-    return None
-
+    return arr[-1] - arr[0]
 
 """
 Problem 2
-Switch the elements of a list at index a and b and return the new list. Assume that every list will have at least two 
-elements. 
+Switch the elements of a list at index a and b and return the new list. Assume that every list will have at least two
+elements.
 """
 
 
 def switch(arr, a, b):
-    return None
-
+    arr[a], arr[b] = arr[b], arr[a]
+    return arr
 
 """
 Problem 3
-Return the Chinese zodiac as a string corresponding to the year given as an int. For testing purposes, use 
-rat, ox, tiger, rabbit, dragon, snake, horse, sheep, monkey, rooster, dog, pig. 
+Return the Chinese zodiac as a string corresponding to the year given as an int. For testing purposes, use
+rat, ox, tiger, rabbit, dragon, snake, horse, sheep, monkey, rooster, dog, pig.
 """
 
 
 def zodiac(year):
+    arr = [rat, ox, tiger, rabbit, dragon, snake, horse, sheep, monkey, rooster, dog, pig]
     return None
 
 
@@ -41,4 +41,4 @@ You should only need to modify the return statement to do this. The result shoul
 
 def seventh_number():
     arr = list(range(0, 778))
-    return None
+    return arr[::-7]
