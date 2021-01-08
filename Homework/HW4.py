@@ -1,4 +1,4 @@
-# YOUR NAME HERE
+# Jeenuh
 
 """
 Problem 1
@@ -17,7 +17,12 @@ Return the average of a list of values using a for loop.
 
 
 def loop_average(arr):
-    return None
+    sum_arr = 0
+    for a in arr:
+        sum_arr = sum_arr + a
+
+    avg = sum_arr / len(arr)
+    return avg
 
 
 """
