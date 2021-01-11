@@ -37,10 +37,12 @@ Return the number of palindromes in a list. A palindrome is a word that is the s
 
 
 def palindromes(arr):
-    return None
+    pal = 0
+    for n in arr:
+        if n == n[::-1]:
+            pal += 1
+    return pal
 
-arr = 121, 464, 554
-print(palindromes(arr))
 
 """
 Problem 4
