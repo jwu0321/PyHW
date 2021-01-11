@@ -84,6 +84,3 @@ def binary(str):
         decimal *= 2
         decimal += int(num)
     return decimal
-
-str = '10100111'
-print(binary(str))
