@@ -81,5 +81,9 @@ You should use the function int(), which can convert strings into ints. For exam
 def binary(str):
     decimal = 0
     for num in str:
-        decimal = decimal * 2 + int(num)
+        decimal *= 2
+        decimal += int(num)
     return decimal
+
+str = '10100111'
+print(binary(str))
