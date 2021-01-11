@@ -7,7 +7,13 @@ Return the average of a list of values using a while loop.
 
 
 def while_average(arr):
-    return None
+    i = 0
+    sum_arr = 0
+    while i < len(arr):
+        sum_arr += arr[i]
+        i += 1
+    avg = sum_arr / len(arr)
+    return avg
 
 
 """
@@ -18,9 +24,8 @@ Return the average of a list of values using a for loop.
 
 def loop_average(arr):
     sum_arr = 0
-    for a in arr:
-        sum_arr = sum_arr + a
-
+    for i in arr:
+        sum_arr += i
     avg = sum_arr / len(arr)
     return avg
 
@@ -32,7 +37,11 @@ Return the number of palindromes in a list. A palindrome is a word that is the s
 
 
 def palindromes(arr):
-    return None
+    num = 0
+    for i in arr:
+        if i == i[::-1]:
+            num += 1
+    return num
 
 
 """
@@ -42,7 +51,11 @@ Return the maximum value of a list. Do not use the max() function.
 
 
 def list_max(arr):
-    return None
+    max = 0
+    for num in arr:
+        if max < num:
+            max = num
+    return max
 
 
 """
@@ -66,4 +79,7 @@ You should use the function int(), which can convert strings into ints. For exam
 
 
 def binary(str):
-    return None
+    decimal = 0
+    for num in str:
+        decimal = decimal * 2 + int(num)
+    return decimal
