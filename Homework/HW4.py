@@ -37,12 +37,10 @@ Return the number of palindromes in a list. A palindrome is a word that is the s
 
 
 def palindromes(arr):
-    num = 0
-    for i in arr:
-        if i == i[::-1]:
-            num += 1
-    return num
+    return None
 
+arr = 121, 464, 554
+print(palindromes(arr))
 
 """
 Problem 4
