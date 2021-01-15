@@ -1,4 +1,4 @@
-# YOUR NAME HERE
+# Jeenuh
 
 """
 Problem 1
@@ -7,7 +7,12 @@ Given the three side lengths of a triangle, return as a string whether it is equ
 
 
 def triangle_type(a, b, c):
-    return None
+    if a == b == c:
+        return ("Equilateral Triangle")
+    elif a == b or b == c or c == a:
+        return ("Isoceles Triangle")
+    else:
+        return ("Scalene Triangle")
 
 
 """
@@ -39,7 +44,12 @@ Given a letter as a string, return a string saying whether it is a vowel or cons
 
 
 def is_vowel(letter):
-    return None
+    if letter in "AEIOUaeiou":
+        return ("Vowel")
+    elif letter in "Yy":
+        return ("Sometimes")
+    else:
+        return ("Consonant")
 
 
 """
