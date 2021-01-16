@@ -58,7 +58,7 @@ Given a letter as a string, return a string saying whether it is a 'vowel' or 'c
 def is_vowel(letter):
     if letter in "aeiou":
         return ("vowel")
-    elif letter in 'y':
+    elif letter in "y":
         return ("sometimes")
     else:
         return ("consonant")
@@ -76,10 +76,13 @@ Implement a function that turns a word into Pig Latin. There are two rules:
 
 
 def pig_latin(word):
-    if word[0] in "aeiou":
+    vowels = "aeiou"
+    if word[0] in vowels:
         return word + 'way'
     else:
-        return word[1:len(word)] + word[0] + 'ay'
+        for x in range(1, len(word)):
+            if word[x] in vowels:
+                return word[x:len(word)] + word[0:x] + 'ay'
 
-word = "steve"
+word = "strong"
 print(pig_latin(word))
