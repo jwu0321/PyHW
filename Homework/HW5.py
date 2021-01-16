@@ -8,11 +8,11 @@ Given the three side lengths of a triangle, return as a string whether it is equ
 
 def triangle_type(a, b, c):
     if a == b == c:
-        return ("Equilateral Triangle")
+        return ("equilateral")
     elif a == b or b == c or c == a:
-        return ("Isoceles Triangle")
+        return ("isoceles")
     else:
-        return ("Scalene Triangle")
+        return ("scalene")
 
 
 """
@@ -38,6 +38,7 @@ The table: http://www.asciitable.com/
 
 
 def caesar_cipher(message, shift):
+    encrypted_message = ""
     for char in message:
         if (char.islower()):
             encrypted_message += chr((ord(char) + shift - 97) % 26 + 97)
@@ -56,11 +57,11 @@ Given a letter as a string, return a string saying whether it is a 'vowel' or 'c
 
 def is_vowel(letter):
     if letter in "aeiou":
-        return ("Vowel")
+        return ("vowel")
     elif letter in 'y':
-        return ("Sometimes")
+        return ("sometimes")
     else:
-        return ("Consonant")
+        return ("consonant")
 
 
 """
@@ -79,3 +80,6 @@ def pig_latin(word):
         return word + 'way'
     else:
         return word[1:len(word)] + word[0] + 'ay'
+
+word = "steve"
+print(pig_latin(word))
