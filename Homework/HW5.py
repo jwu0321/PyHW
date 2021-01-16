@@ -10,7 +10,7 @@ def triangle_type(a, b, c):
     if a == b == c:
         return ("equilateral")
     elif a == b or b == c or c == a:
-        return ("isoceles")
+        return ("isosceles")
     else:
         return ("scalene")
 
@@ -83,6 +83,3 @@ def pig_latin(word):
         for x in range(1, len(word)):
             if word[x] in vowels:
                 return word[x:len(word)] + word[0:x] + 'ay'
-
-word = "strong"
-print(pig_latin(word))
