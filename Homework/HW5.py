@@ -38,7 +38,14 @@ The table: http://www.asciitable.com/
 
 
 def caesar_cipher(message, shift):
-    return None
+    for char in message:
+        if (char.islower()):
+            encrypted_message += chr((ord(char) + shift - 97) % 26 + 97)
+        elif (char.isupper()):
+            encrypted_message += chr((ord(char) + shift - 65) % 26 + 65)
+        else:
+            encrypted_message += char
+    return encrypted_message
 
 
 """
@@ -48,9 +55,9 @@ Given a letter as a string, return a string saying whether it is a 'vowel' or 'c
 
 
 def is_vowel(letter):
-    if letter in "AEIOUaeiou":
+    if letter in "aeiou":
         return ("Vowel")
-    elif letter in "Yy":
+    elif letter in 'y':
         return ("Sometimes")
     else:
         return ("Consonant")
