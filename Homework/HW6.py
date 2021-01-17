@@ -1,4 +1,4 @@
-# WARNING: Iterative solutions will not be considered correct.
+# WARNING: Non-recursive solutions will not be considered correct.
 
 def digit_sum(num):
     """
