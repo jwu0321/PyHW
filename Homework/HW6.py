@@ -12,7 +12,6 @@ def digit_sum(num):
     :return: the sum of the digits of {num}
     :rtype: int
     """
-    pass
 
 
 def hanoi(rings):
@@ -37,17 +36,17 @@ def hanoi(rings):
     :return: the minimum number of moves to solve a Tower of Hanoi with {rings} discs
     :rtype: int
     """
-    pass
 
 
 def subset_sum(nums, target):
     """
     Recursively determine whether some subset of a given list of numbers sums to a target value.
     Negative values are allowed, both as the target and in the list of numbers.
-    If the list is empty, this is vacuously False.
+    If the target is 0, this is trivially True.
+    Otherwise, if the list is empty, this is vacuously False.
 
     Hint: Consider what happens if you subtract one of the numbers from the target.
-    Hint: Alternatively, generate all subsets of the given list.
+    Hint: Alternatively, generate all non-empty subsets of the given list.
 
     :param nums: the list of numbers
     :type nums: list[int]
@@ -56,7 +55,6 @@ def subset_sum(nums, target):
     :return: True if {target} is the sum of a subset of {nums}; else False
     :rtype: bool
     """
-    pass
 
 
 def permute(array):
@@ -72,4 +70,3 @@ def permute(array):
     :return:
     :rtype: list[list]
     """
-    pass
