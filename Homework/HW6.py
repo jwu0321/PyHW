@@ -4,7 +4,7 @@ def digit_sum(num):
     """
     Recursively compute the sum of the digits in a given number.
 
-    Hint: First cast num to a string.
+    Hint: Either cast num to a string or find some other way to extract digits.
 
     :param num: the number
     :type num: int
@@ -23,6 +23,8 @@ def hanoi(rings):
     1. Only one disc can be moved at a time.
     2. You can only move the topmost disc from any rod to another rod.
     3. You cannot move a larger disc on top of a smaller disc.
+    Here's an image for reference: https://upload.wikimedia.org/wikipedia/commons/0/07/Tower_of_Hanoi.jpeg
+
 
     Recursively find the minimum number of moves required with a given number of rings.
 
