@@ -3,6 +3,7 @@
 def digit_sum(num):
     """
     Recursively compute the sum of the digits in a given number.
+    In case of a negative number, ignore the negative sign.
 
     Hint: Either cast num to a string or find some other way to extract digits.
 

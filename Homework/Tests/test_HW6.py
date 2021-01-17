@@ -27,6 +27,10 @@ def test_digit_sum():
         errors.append(f'Expected: 6, Actual {s}')
     if (s := digit_sum(8972345971240123894712309487120347091328750129345)) != 205:
         errors.append(f'Expected: 205, Actual {s}')
+    if (s := digit_sum(-1)) != 1:
+        errors.append(f'Expected: 1, Actual {s}')
+    if (s := digit_sum(-54321)) != 15:
+        errors.append(f'Expected: 15, Actual {s}')
 
     assert not errors, '\n'.join(errors)
 
