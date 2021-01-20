@@ -78,9 +78,9 @@ You should use the function int(), which can convert strings into ints. For exam
 """
 
 
-def binary(str):
-    decimal = 0
-    for num in str:
-        decimal *= 2
-        decimal += int(num)
-    return decimal
+def binary(num):
+    num = num[::-1]
+    sum = 0
+    for i in range(0, len(num)):
+        sum += (2 ** i) * int(num[i])
+    return sum
