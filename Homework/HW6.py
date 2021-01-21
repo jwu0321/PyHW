@@ -21,6 +21,10 @@ def digit_sum(num):
 
 
 def hanoi(rings):
+    if rings == 0:
+        return 0
+    return 2 * hanoi(rings - 1) + 1
+
     """
     The Tower of Hanoi is a classic mathematical toy. You are given three rods.
     Upon the first rod are a number of discs in ascending order (largest on the bottom, smallest on top).
@@ -45,6 +49,7 @@ def hanoi(rings):
 
 
 def subset_sum(nums, target):
+
     """
     Recursively determine whether some subset of a given list of numbers sums to a target value.
     Negative values are allowed, both as the target and in the list of numbers.
@@ -64,6 +69,15 @@ def subset_sum(nums, target):
 
 
 def permute(array):
+    if len(array) == 0 or len(array) == 1:
+        return [array]
+    result = []
+    for x in array:
+        rem = [y for y in array if y != x]
+        for p in permute(rem):
+            result.append([x] + p)
+    return result
+
     """
     Recursively generate all permutations of a given list.
 
