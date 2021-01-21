@@ -7,6 +7,7 @@ def digit_sum(num):
         num *= -1
     return (num % 10) + digit_sum(num // 10)
 
+
     """
     Recursively compute the sum of the digits in a given number.
     In case of a negative number, ignore the negative sign.
@@ -24,6 +25,7 @@ def hanoi(rings):
     if rings == 0:
         return 0
     return 2 * hanoi(rings - 1) + 1
+
 
     """
     The Tower of Hanoi is a classic mathematical toy. You are given three rods.
@@ -49,6 +51,13 @@ def hanoi(rings):
 
 
 def subset_sum(nums, target):
+    if target == 0:
+        return True
+    if len(nums) == 0:
+        return False
+    return subset_sum(nums[1:], target - nums[0]) or subset_sum(nums[1:], target)
+    return False
+
 
     """
     Recursively determine whether some subset of a given list of numbers sums to a target value.
@@ -77,6 +86,7 @@ def permute(array):
         for p in permute(rem):
             result.append([x] + p)
     return result
+
 
     """
     Recursively generate all permutations of a given list.
