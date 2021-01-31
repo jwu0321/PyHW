@@ -3,11 +3,12 @@
 """
 Problem 1
 Implement bogosort on a list of numbers using the random module. The main idea of this is to shuffle an array until
-it is sorted. You will be using 3 different functions:
+it is sorted in ascending order. You will be using 3 different functions:
 bogosort(arr)
     -This is the main function for sorting. It runs the loop and returns the sorted array.
 is_sorted(arr):
     -This returns True if it is sorted and False otherwise.
+    -If there is only one element, return True.
 shuffle(arr):
     -This is where you implement your own algorithm for shuffling. I want you to use the Fisher-Yates algorithm,
     which you can learn about here: https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
@@ -28,6 +29,7 @@ def shuffle(arr):
 
 def bogosort(arr):
     return None
+
 
 
 """
